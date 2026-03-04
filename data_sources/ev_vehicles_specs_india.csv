@@ -1,0 +1,26 @@
+model_name,manufacturer,vehicle_type,price,range_km,battery_capacity_kwh,charging_time_hr
+
+Tata Tiago EV,Tata,4W,800000,250,24,4
+Tata Nexon EV,Tata,4W,1500000,465,40.5,6
+Tata Punch EV,Tata,4W,1200000,421,35,5
+MG ZS EV,MG,4W,2300000,461,50.3,8
+Mahindra XUV400,Mahindra,4W,1600000,456,39.4,6
+Hyundai Kona Electric,Hyundai,4W,2300000,452,39.2,6
+BYD Atto 3,BYD,4W,3400000,521,60.5,8
+BYD e6,BYD,4W,2900000,415,71.7,9
+BMW i4,BMW,4W,7000000,590,83.9,8
+Mercedes-Benz EQB,Mercedes-Benz,4W,7400000,423,66.5,7
+Volvo XC40 Recharge,Volvo,4W,5600000,418,78,8
+Kia EV6,Kia,4W,6000000,528,77.4,7
+
+Ola S1 Pro,Ola,2W,139000,181,4,6
+Ola S1 Air,Ola,2W,109000,151,3,5
+Ather 450X,Ather,2W,135000,146,3.7,5
+TVS iQube,TVS,2W,125000,145,3.4,5
+Bajaj Chetak,Bajaj,2W,120000,126,3,4.5
+Hero Electric Optima,Hero Electric,2W,100000,140,2.9,4
+Okinawa PraisePro,Okinawa,2W,105000,137,3.3,5
+Ampere Magnus EX,Ampere,2W,95000,121,2.3,5
+Revolt RV400,Revolt,2W,130000,150,3.2,4.5
+Pure EV ePluto 7G,Pure EV,2W,90000,120,2.5,4
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EV Market Analytics</title>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #020617;
+            color: #e2e8f0;
+        }
+        .navbar {
+            background: #020617;
+            padding: 18px 40px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #0ea5e9;
+        }
+        .title {
+            font-size: 26px;
+            font-weight: bold;
+            color: #22d3ee;
+        }
+        .nav-links a {
+            color: #cbd5f5;
+            margin-left: 25px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 30px 40px;
+        }
+        .charts-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+        .chart-card {
+            background: #020617;
+            border-radius: 16px;
+            padding: 20px;
+            border: 1px solid #0ea5e9;
+            box-shadow: 0 0 25px rgba(34,211,238,0.1);
+        }
+        .chart-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #22d3ee;
+        }
+        canvas {
+            width: 100% !important;
+            height: 350px !important;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="title">📊 EV Market Analytics</div>
+    <div class="nav-links">
+        <a href="/">Overview</a>
+        <a href="/market.html">Analytics</a>
+        <a href="/technical.html">Infrastructure</a>
+        <a href="/ai.html">AI Insights</a> 
+    </div>
+</div>
+
+<div class="container">
+    <div class="charts-grid">
+
+        <div class="chart-card">
+            <div class="chart-title">🏭 Manufacturer Sales (Clustered)</div>
+            <canvas id="manufacturerChart"></canvas>
+        </div>
+
+        <div class="chart-card">
+            <div class="chart-title">📈 Market Growth Area</div>
+            <canvas id="marketGrowthChart"></canvas>
+        </div>
+
+        <div class="chart-card">
+            <div class="chart-title">📉 Manufacturer Trend Line</div>
+            <canvas id="trendChartMarket"></canvas>
+        </div>
+
+        <div class="chart-card">
+            <div class="chart-title">🚗 Vehicle Type Distribution</div>
+            <canvas id="vehicleTypeChart"></canvas>
+        </div>
+
+        <div class="chart-card">
+            <div class="chart-title">🎯 Price vs Range (Scatter)</div>
+            <canvas id="priceRangeChart"></canvas>
+        </div>
+
+        <div class="chart-card">
+            <div class="chart-title">🧠 Battery vs Range (Radar)</div>
+            <canvas id="radarChart"></canvas>
+        </div>
+
+    </div>
+</div>
+
+<script src="/js/market.js"></script>
+</body>
+</html>

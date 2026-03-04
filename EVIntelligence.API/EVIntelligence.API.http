@@ -1,0 +1,6 @@
+@EVIntelligence.API_HostAddress = http://localhost:5212
+
+GET {{EVIntelligence.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

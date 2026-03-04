@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "chartjs-chart-box-and-violin-plot": "^4.0.0"
+  }
+}
