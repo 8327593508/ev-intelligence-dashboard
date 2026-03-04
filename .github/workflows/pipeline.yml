@@ -1,0 +1,25 @@
+name: Monthly EV Pipeline
+
+on:
+  schedule:
+    - cron: "0 3 1 * *"   # runs 1st day of every month
+  workflow_dispatch:
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Build Docker Image
+        run: docker build -t ev-pipeline .
+
+      - name: Run Pipeline Container
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          docker run \
+          -e DATABASE_URL=$DATABASE_URL \
+          ev-pipeline
