@@ -1,25 +1,37 @@
-name: Monthly EV Pipeline
+name: EV Intelligence Monthly Pipeline
 
 on:
   schedule:
-    - cron: "0 3 1 * *"   # runs 1st day of every month
-  workflow_dispatch:
+    - cron: "0 3 1 * *"   # Runs at 3 AM UTC on the 1st of every month
+  workflow_dispatch:       # Allows manual run from GitHub
 
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
+
+      # 1️⃣ Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
+      # 2️⃣ Build Docker image
       - name: Build Docker Image
-        run: docker build -t ev-pipeline .
+        run: |
+          docker build -t ev-pipeline .
 
+      # 3️⃣ Run pipeline inside Docker
       - name: Run Pipeline Container
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          OPENCHARGE_API_KEY: ${{ secrets.OPENCHARGE_API_KEY }}
+          DATA_GOV_API_KEY: ${{ secrets.DATA_GOV_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+
         run: |
           docker run \
           -e DATABASE_URL=$DATABASE_URL \
+          -e OPENCHARGE_API_KEY=$OPENCHARGE_API_KEY \
+          -e DATA_GOV_API_KEY=$DATA_GOV_API_KEY \
+          -e GROQ_API_KEY=$GROQ_API_KEY \
           ev-pipeline
