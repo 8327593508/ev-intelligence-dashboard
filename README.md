@@ -150,12 +150,6 @@ The pipeline processes:
 
 This structured data is stored in a **PostgreSQL database (Neon DB)**.
 
-### Dockerization and Pipeline scheduler:
-
-• Whole data extraction part runs in docker container
-• Docker container runs monthly once  
-• placed a workflow for auto run the docker container
-• Model retrained monthly with updated data
 ---
 
 # 🧮 Feature Engineering
