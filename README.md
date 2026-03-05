@@ -395,29 +395,31 @@ This ensures the dashboard always displays **updated forecasts**.
 
 ---
 
-# 📸 Dashboard Screenshots
-
 ### Overview Dashboard
 
-*(Add screenshot here)*
+<img width="1890" height="859" alt="image" src="https://github.com/user-attachments/assets/581b8ca9-ffc4-4e28-9615-4175d2285031" />
+
 
 ---
 
 ### EV Analytics
 
-*(Add screenshot here)*
+<img width="1887" height="869" alt="image" src="https://github.com/user-attachments/assets/e8999b46-82de-40a3-bfec-a4093a2792fc" />
+
 
 ---
 
 ### Infrastructure Analytics
 
-*(Add screenshot here)*
+<img width="1843" height="865" alt="image" src="https://github.com/user-attachments/assets/f998bf07-eabf-4247-b1d5-df9595814010" />
+
 
 ---
 
 ### AI Assistant (Moxie)
 
-*(Add screenshot here)*
+<img width="1901" height="872" alt="image" src="https://github.com/user-attachments/assets/4abae659-322c-42e0-a68d-25c607b9be44" />
+
 
 ---
 
