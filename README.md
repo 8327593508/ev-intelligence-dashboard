@@ -411,7 +411,8 @@ This ensures the dashboard always displays **updated forecasts**.
 
 ### Infrastructure Analytics
 
-<img width="1843" height="865" alt="image" src="https://github.com/user-attachments/assets/f998bf07-eabf-4247-b1d5-df9595814010" />
+<img width="1866" height="852" alt="image" src="https://github.com/user-attachments/assets/5ca29937-567c-4d11-bca6-f89d23c9cff1" />
+
 
 
 ---
@@ -419,6 +420,9 @@ This ensures the dashboard always displays **updated forecasts**.
 ### AI Assistant (Moxie)
 
 <img width="1901" height="872" alt="image" src="https://github.com/user-attachments/assets/4abae659-322c-42e0-a68d-25c607b9be44" />
+
+<img width="1742" height="868" alt="image" src="https://github.com/user-attachments/assets/ba307829-3c93-4927-a46a-230259cf367c" />
+
 
 
 ---
